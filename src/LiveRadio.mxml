@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ViewNavigatorApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+							xmlns:s="library://ns.adobe.com/flex/spark"
+							splashScreenImage="@Embed('assets/images/splash_screen.png')" splashScreenScaleMode="stretch"
+
+							firstView="views.MainApplicationHome"
+							applicationComplete="init(event)">
+	
+							
+	<fx:Script>
+		<![CDATA[
+			import mx.core.FlexGlobals;
+			import mx.events.FlexEvent;
+			
+			
+			
+			protected function init(event:FlexEvent):void
+			{
+				// Invoke listener - request to be notified when the AIR app is invoked (started), this could occur from the command line, UI or
+				// from opening an associated file
+				NativeApplication.nativeApplication.addEventListener(InvokeEvent.INVOKE, onInvoke);
+				
+				// Get notified whan a global error occurs
+				loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, onError);
+				
+				// Resolution Screen
+				//				trace(Capabilities.screenResolutionX); // screen resolution
+				//				trace(Capabilities.screenResolutionY); // screen resolution
+				
+				// NativeApplication doesnt work in Mobile
+				//				trace(NativeApplication.nativeApplication.activeWindow.width);
+				//				trace(NativeApplication.nativeApplication.activeWindow.height);
+				
+				// Screen Size
+				trace(stage.stageHeight); // 762
+				trace(stage.stageWidth); // 480
+				
+				trace("dpis:"+Capabilities.screenDPI);
+				//				var currentDpi:Number = FlexGlobals.topLevelApplication.runtimeDPI;
+				//				trace(currentDpi);
+				
+			}
+			
+			// Called when application is first invoked
+			protected function onInvoke(invokeEvt:InvokeEvent):void 
+			{
+				trace("Handling invoke event");
+				
+				
+				
+			}
+			
+			// Handle Global Errors
+			protected function onError(e:UncaughtErrorEvent):void
+			{
+				e.preventDefault();
+				trace("An error has occurred and been caught by the global error handler: " + e.error.toString(), "My Global Error Handler");
+			}
+			
+			
+			
+			
+			
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<s:navigationContent>
+		<s:Button icon="@Embed('assets/images/launchpad_home.png')" click="navigator.popToFirstView()"/>
+	</s:navigationContent>
+	
+	
+	
+	
+	
+</s:ViewNavigatorApplication>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:s="library://ns.adobe.com/flex/spark" xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:flm="http://ns.adobe.com/flame/2008" xmlns:ai="http://ns.adobe.com/ai/2009">
+	<fx:Metadata>[HostComponent("spark.components.List")]</fx:Metadata>
+	<s:states>
+		<s:State name="normal"/>
+		<s:State name="disabled"/>
+	</s:states>
+	<s:DataGroup clipAndEnableScrolling="true" id="dataGroup" 
+				 itemRenderer="net.androidda.examples.liveradio.renderers.RepeatedItem" 
+				 width="442" height="666" x="0" y="0">
+		<s:layout>
+			<s:VerticalLayout gap.normal="0"/>
+		</s:layout>
+	</s:DataGroup>
+</s:Skin>

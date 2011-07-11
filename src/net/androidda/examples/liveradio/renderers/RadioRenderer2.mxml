@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				xmlns:s="library://ns.adobe.com/flex/spark" 
+				xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:flm="http://ns.adobe.com/flame/2008" xmlns:ai="http://ns.adobe.com/ai/2009" 
+				autoDrawBackground="true">
+	<fx:Script>
+		<![CDATA[
+			override public function set data(value:Object):void {
+				if (value == null)
+					return;
+				
+				if (value == super.data)
+					return
+					
+					super.data = value;
+				
+				var theDataString:String = data as String;
+				trace(theDataString);
+				
+				
+			}
+			
+			override protected function updateDisplayList(unscaledWidth:Number, unscaledHeight:Number):void {
+				super.updateDisplayList(unscaledWidth, unscaledHeight);
+			}
+			
+		]]>
+	</fx:Script>
+	<s:Line xTo="468" x="0" y="75">
+		<s:stroke>
+			<s:SolidColorStroke caps="none" alpha=".6" color="#FFFFFF" joints="miter" miterLimit="10" weight="1"/>
+		</s:stroke>
+		<s:filters>
+			<s:DropShadowFilter alpha=".8" angle="90" blurX="0" blurY="0" distance="1" quality="2"/>
+		</s:filters>
+	</s:Line>
+	<s:Group>
+		<s:Rect height="46" d:id="3" radiusX="7.64226" radiusY="7.64226" flm:variant="1" width="47" 
+				x="408" y="14">
+			<s:fill>
+				<s:LinearGradient rotation="270" scaleX="46.5049" x="23.252" y="46.5049">
+					<s:GradientEntry color="#424242" ratio="0"/>
+					<s:GradientEntry color="#151515" ratio="0.585925"/>
+					<s:GradientEntry ratio="1"/>
+				</s:LinearGradient>
+			</s:fill>
+		</s:Rect>
+		<s:Path data="M 17.067 9.854 L 8.534 14.78 L 0 19.707 L 0 9.854 L 0 0 L 8.534 4.927 L 17.067 9.854 Z" winding="nonZero" x="424" y="27">
+			<s:fill>
+				<s:SolidColor color="#6E6E6E"/>
+			</s:fill>
+		</s:Path>		
+	</s:Group>
+	<s:Group>
+		<s:layout>
+			<s:VerticalLayout paddingTop="30" paddingLeft="10"  />
+		</s:layout>
+		<s:Label text="{data.radio}" left="40" />
+	</s:Group>
+
+	
+	
+</s:ItemRenderer>

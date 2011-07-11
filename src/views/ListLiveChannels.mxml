@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" title="ListLiveChannels">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<s:navigationContent>
+		<s:Button label="Back"/>
+	</s:navigationContent>
+	<s:titleContent>
+		<s:Label text="Lista de reproduccion"/>
+	</s:titleContent>
+	<!--<s:actionContent>
+		<s:Button label="Opt"/>
+	</s:actionContent>-->
+</s:View>

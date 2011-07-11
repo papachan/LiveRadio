@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:s="library://ns.adobe.com/flex/spark" xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:flm="http://ns.adobe.com/flame/2008" xmlns:ai="http://ns.adobe.com/ai/2009" autoDrawBackground="false">
+	<s:Path data="M 17.067 9.854 L 8.534 14.78 L 0 19.707 L 0 9.854 L 0 0 L 8.534 4.927 L 17.067 9.854 Z" winding="nonZero" x="364" y="27">
+		<s:fill>
+			<s:SolidColor color="#6E6E6E"/>
+		</s:fill>
+	</s:Path>
+	<s:Rect alpha.hovered="0.3" alpha.normal="0" alpha.selected="0.5"
+			d:userLabel="Item Highlight Rectangle" 
+			width="442" width.hovered="451" width.selected="451" 
+			height="61" height.hovered="61" height.selected="75"
+			x.hovered="0" x.selected="0" x.normal="3" 
+			y.hovered="0" y.selected="0" y.normal="14">
+		<s:fill>
+			<s:SolidColor color="0xCED7EE"/>
+		</s:fill>
+	</s:Rect>
+</s:Group>

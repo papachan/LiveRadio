@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark"
+		xmlns:ATE="http://ns.adobe.com/ate/2009" 
+		xmlns:ai="http://ns.adobe.com/ai/2009" 
+		xmlns:fc="http://ns.adobe.com/flashcatalyst/2009" 
+		xmlns:d="http://ns.adobe.com/fxg/2008/dt" 
+		xmlns:flm="http://ns.adobe.com/flame/2008"
+		xmlns:dao="net.androidda.examples.liveradio.dao.*"
+		title="Home" creationComplete="creationCompleteHandler(event)" xmlns:renderers="net.androidda.examples.liveradio.renderers.*">
+
+	<fx:Script>
+		<![CDATA[
+			import mx.collections.ArrayCollection;
+			import mx.events.FlexEvent;
+			
+			import net.androidda.examples.liveradio.api.Service;
+			import net.androidda.examples.liveradio.dao.AppModel;
+			
+			private var api:Service = Service.getInstance();
+			[Bindable] private var dataModel:AppModel = AppModel.getInstance();
+			
+			protected function list1_clickHandler():void
+			{
+				trace("itemList:"+channelList.selectedIndex);
+				navigator.pushView(Visualizer, channelList.selectedItem);
+			}
+
+			protected function creationCompleteHandler(event:FlexEvent):void
+			{
+				trace("complete home");
+				api.isInitialized = true;
+				if(Visualizer.soundfacade){
+					trace("clear sound");
+					Visualizer.soundfacade.stop();
+				}
+				if(!this.dataModel.radio.length){
+					loadingData();	
+				}
+				
+			}
+			protected function loadingData ():void
+			{
+				var file:File = File.applicationDirectory.resolvePath("data.xml");
+				if(file.exists){
+					var stream:FileStream = new FileStream();
+					stream.open(file, FileMode.READ);
+					var xml:XML = XML(stream.readUTFBytes(stream.bytesAvailable));
+					stream.close();
+					
+					this.dataModel.radio = new ArrayCollection();
+					
+					for each (var value:XML in xml.radio)
+					{
+//						this.dataModel.radio.addItem(String(value.name));
+						this.dataModel.radio.addItem({radio:String(value.name), stream:String(value.stream)});
+					}
+					trace("loaded:"+this.dataModel.radio.length);
+				}else{
+					trace("file not found");
+				}
+			}
+
+
+		]]>
+	</fx:Script>
+
+	<fx:Declarations>
+		<!--<dao:AppModel id="dataModel" />-->
+	</fx:Declarations>
+	
+	
+	<s:Rect height="800" width="480" x="0" y="0" d:locked="true">
+		<s:fill>
+			<s:SolidColor color="#373737"/>
+		</s:fill>
+	</s:Rect>
+	<!-- skinClass="net.androidda.examples.liveradio.data.DataList" -->
+	<s:List id="channelList" 
+			top="0" bottom="0" left="0" right="0" 
+			dataProvider="{dataModel.radio}"
+			interactionMode="touch"
+			change="list1_clickHandler()">
+		<s:itemRenderer>
+			<fx:Component>
+				<renderers:RadioRenderer2  />
+			</fx:Component>
+		</s:itemRenderer>
+		
+	</s:List>
+</s:View>

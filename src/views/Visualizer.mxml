@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" 
+		title="Visualizer" creationComplete="view1_creationCompleteHandler(event)"
+		
+		>
+
+	<fx:Script>
+		<![CDATA[
+			import mx.events.FlexEvent;
+			
+			import net.androidda.examples.liveradio.SoundFacade;
+			import net.androidda.examples.liveradio.api.Service;
+			
+			public static var soundfacade:SoundFacade;
+			
+			private var api:Service = Service.getInstance();
+
+			
+//			private var test_url:String = "http://83.36.63.43:8000/trebujena.ogg";
+//			private var test_url:String = "http://www.cbc.ca/livemedia/cbcr1-toronto.m3u";
+//			private var test_url:String = "http://network.absoluteradio.co.uk/core/audio/ogg/live.pls?service=vr";
+//			private var test_url:String = "http://zeilsteen.myftp.org/zeilsteen.pls";
+			private var test_url:String = "http://www.vorbis.com/music/Epoq-Lepidoptera.ogg";
+//			private var test_url:String = "http://live.tlis.sk:8000/live.ogg";
+			
+			
+			
+			
+			protected function button1_clickHandler(event:MouseEvent):void
+			{
+				/// here stop radio playing
+				navigator.popView();
+			}
+
+			protected function view1_creationCompleteHandler(event:FlexEvent):void
+			{
+//				if(!api.isInitialized){
+//					navigator.popToFirstView();
+//					return;
+//				}
+				
+				if(data && data.stream!=null){
+				trace("OK!!!!")	
+				soundfacade = new SoundFacade(data.stream,true,true,true,100);
+				soundfacade.load();
+				}/* else{
+				navigator.popToFirstView();
+				return;
+
+				} */
+			}
+
+
+
+		]]>
+	</fx:Script>
+
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<s:navigationContent>
+		<!--<s:Button icon="@Embed('assets/images/launchpad_home.png')" click="navigator.popToFirstView()"/>-->
+		<s:Button label="Volver" click="button1_clickHandler(event)"/>
+	</s:navigationContent>
+	<s:titleContent>
+		<s:Label text="Playing"/>
+	</s:titleContent>
+	<!--<s:actionContent>
+		<s:Button label="Opt"/>
+	</s:actionContent>-->
+	<s:Image source="@Embed('assets/images/playing.png')" />
+</s:View>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:MobileIconItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				xmlns:s="library://ns.adobe.com/flex/spark">
+	
+		<!--<s:Group>
+			<s:Rect height="46" radiusX="7.64226" radiusY="7.64226" width="47" x="348" y="14">
+				<s:fill>
+					<s:LinearGradient rotation="270" scaleX="46.5049" x="23.252" y="46.5049">
+						<s:GradientEntry color="#424242" ratio="0"/>
+						<s:GradientEntry color="#151515" ratio="0.585925"/>
+						<s:GradientEntry ratio="1"/>
+					</s:LinearGradient>
+				</s:fill>
+			</s:Rect>
+			<s:Path data="M 17.067 9.854 L 8.534 14.78 L 0 19.707 L 0 9.854 L 0 0 L 8.534 4.927 L 17.067 9.854 Z" winding="nonZero" x="364" y="27">
+				<s:fill>
+					<s:SolidColor color="#6E6E6E"/>
+				</s:fill>
+			</s:Path>
+		</s:Group>-->
+		
+	
+		
+	
+</s:MobileIconItemRenderer>

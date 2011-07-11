@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<radio>
+		<name>Channel 1: Radio España</name>
+		<stream>http://radio.guijuelo.es/emision/directo.ogg</stream>
+		<style>Rock</style>
+	</radio>
+	<radio>
+		<name>Channel 1: Radio Rock</name>
+		<stream>http://www.kehuelga.org:8000/radio.ogg</stream>
+		<style>Rock</style>
+	</radio>
+	<radio>
+		<name>Channel 1: Jazz Rock</name>
+		<stream>http://live.tlis.sk:8000/live.ogg</stream>
+		<style>Jazz</style>
+	</radio>
+	<radio>
+		<name>Channel 2: radio gnu</name>
+		<stream>http://audio.radiognu.org/radiognu.ogg</stream>
+		<style>LatinAmerican</style>
+	</radio>
+	<radio>
+		<name>Channel 1: Epog</name>
+		<stream>http://www.vorbis.com/music/Epoq-Lepidoptera.ogg</stream>
+		<style>Jazz</style>
+	</radio>
+	<radio>
+		<name>Channel 2: Kenny Beltrey</name>
+		<stream>http://www.vorbis.com/music/Hydrate-Kenny_Beltrey.ogg</stream>
+		<style>LatinAmerican</style>
+	</radio>
+	<radio>
+		<name>Channel 2: Vallenato</name>
+		<stream>http://audio.radiognu.org/radiognu.ogg</stream>
+		<style>LatinAmerican</style>
+	</radio>
+	<radio>
+		<name>Channel 1: Jazz Rock</name>
+		<stream>http://live.tlis.sk:8000/live.ogg</stream>
+		<style>Jazz</style>
+	</radio>
+	<radio>
+		<name>Channel 2: Vallenato</name>
+		<stream>http://audio.radiognu.org/radiognu.ogg</stream>
+		<style>LatinAmerican</style>
+	</radio>
+	<radio>
+		<name>Channel 1: Jazz Rock</name>
+		<stream>http://live.tlis.sk:8000/live.ogg</stream>
+		<style>Jazz</style>
+	</radio>
+	<radio>
+		<name>Channel 2: Vallenato</name>
+		<stream>http://audio.radiognu.org/radiognu.ogg</stream>
+		<style>LatinAmerican</style>
+	</radio>
+	<radio>
+		<name>Channel 1: Jazz Rock</name>
+		<stream>http://live.tlis.sk:8000/live.ogg</stream>
+		<style>Jazz</style>
+	</radio>
+	<radio>
+		<name>Channel 2: Vallenato</name>
+		<stream>http://audio.radiognu.org/radiognu.ogg</stream>
+		<style>LatinAmerican</style>
+	</radio>
+	<radio>
+		<name>Channel 1: Jazz Rock</name>
+		<stream>http://live.tlis.sk:8000/live.ogg</stream>
+		<style>Jazz</style>
+	</radio>
+	<radio>
+		<name>Channel 2: Vallenato</name>
+		<stream>http://audio.radiognu.org/radiognu.ogg</stream>
+		<style>LatinAmerican</style>
+	</radio>
+	<radio>
+		<name>Channel 1: Jazz Rock</name>
+		<stream>http://live.tlis.sk:8000/live.ogg</stream>
+		<style>Jazz</style>
+	</radio>
+	<radio>
+		<name>Channel 2: Vallenato</name>
+		<stream>http://audio.radiognu.org/radiognu.ogg</stream>
+		<style>LatinAmerican</style>
+	</radio>
+	<radio>
+		<name>Channel 1: Jazz Rock</name>
+		<stream>http://live.tlis.sk:8000/live.ogg</stream>
+		<style>Jazz</style>
+	</radio>
+	<radio>
+		<name>Channel 2: Vallenato</name>
+		<stream>http://audio.radiognu.org/radiognu.ogg</stream>
+		<style>LatinAmerican</style>
+	</radio>
+	<radio>
+		<name>Channel 1: Jazz Rock</name>
+		<stream>http://live.tlis.sk:8000/live.ogg</stream>
+		<style>Jazz</style>
+	</radio>
+	<radio>
+		<name>Channel 2: Vallenato</name>
+		<stream>http://audio.radiognu.org/radiognu.ogg</stream>
+		<style>LatinAmerican</style>
+	</radio>
+	<radio>
+		<name>Channel 1: Jazz Rock</name>
+		<stream>http://live.tlis.sk:8000/live.ogg</stream>
+		<style>Jazz</style>
+	</radio>
+	<radio>
+		<name>Channel 2: Vallenato</name>
+		<stream>http://audio.radiognu.org/radiognu.ogg</stream>
+		<style>LatinAmerican</style>
+	</radio>
+	<radio>
+		<name>Channel 1: Jazz Rock</name>
+		<stream>http://live.tlis.sk:8000/live.ogg</stream>
+		<style>Jazz</style>
+	</radio>
+	<radio>
+		<name>Channel 2: Vallenato</name>
+		<stream>http://audio.radiognu.org/radiognu.ogg</stream>
+		<style>LatinAmerican</style>
+	</radio>
+	<radio>
+		<name>Channel 1: Jazz Rock</name>
+		<stream>http://live.tlis.sk:8000/live.ogg</stream>
+		<style>Jazz</style>
+	</radio>
+	<radio>
+		<name>Channel 2: Vallenato</name>
+		<stream>http://audio.radiognu.org/radiognu.ogg</stream>
+		<style>LatinAmerican</style>
+	</radio>
+</data>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ItemRenderer xmlns:s="library://ns.adobe.com/flex/spark" xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:flm="http://ns.adobe.com/flame/2008" xmlns:ai="http://ns.adobe.com/ai/2009" autoDrawBackground="false">
+	<s:states>
+		<s:State name="normal"/>
+		<s:State name="hovered"/>
+		<s:State name="selected"/>
+	</s:states>
+	<s:RichText ai:aa="2" color="#FFFFFF" columnCount="1" fontFamily="Droid Sans" fontSize="29" fontWeight="bold" d:id="4" kerning="on" tabStops="S45.1208000183105 S90.2416000366211 S135.362400054932 S180.483200073242 S225.604000091553 S270.724800109863" text="{data}" d:userLabel="Channel 1: radio jazz" flm:variant="2" whiteSpaceCollapse="preserve" x="9" y="24">
+		<s:filters>
+			<s:DropShadowFilter alpha="0.8" blurX="0" blurY="0" distance="1.41421" quality="2"/>
+		</s:filters>
+	</s:RichText>
+	<s:Line d:id="5" xTo="439" x="3.5" y="74.5">
+		<s:stroke>
+			<s:SolidColorStroke caps="none" color="#FFFFFF" joints="miter" miterLimit="10" weight="1"/>
+		</s:stroke>
+		<s:filters>
+			<s:DropShadowFilter alpha="0.53" angle="90" blurX="0" blurY="0" distance="1" quality="2"/>
+		</s:filters>
+	</s:Line>
+	<s:Rect height="46" d:id="3" radiusX="7.64226" radiusY="7.64226" flm:variant="1" width="47" x="348" y="14">
+		<s:fill>
+			<s:LinearGradient rotation="270" scaleX="46.5049" x="23.252" y="46.5049">
+				<s:GradientEntry color="#424242" ratio="0"/>
+				<s:GradientEntry color="#151515" ratio="0.585925"/>
+				<s:GradientEntry ratio="1"/>
+			</s:LinearGradient>
+		</s:fill>
+	</s:Rect>
+	<s:Path data="M 17.067 9.854 L 8.534 14.78 L 0 19.707 L 0 9.854 L 0 0 L 8.534 4.927 L 17.067 9.854 Z" winding="nonZero" x="364" y="27">
+		<s:fill>
+			<s:SolidColor color="#6E6E6E"/>
+		</s:fill>
+	</s:Path>
+	<s:Rect alpha.hovered="0.3" alpha.normal="0" alpha.selected="0.5"
+			d:userLabel="Item Highlight Rectangle" 
+			width="442" width.hovered="451" width.selected="451" 
+			height="61" height.hovered="61" height.selected="75"
+			x.hovered="0" x.selected="0" x.normal="3" 
+			y.hovered="0" y.selected="0" y.normal="14">
+		<s:fill>
+			<s:SolidColor color="0xCED7EE"/>
+		</s:fill>
+	</s:Rect>
+</s:ItemRenderer>
